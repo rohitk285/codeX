@@ -1,7 +1,9 @@
 import { useState } from "react";
 import { Send, Mic, ChevronLeft } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 export default function ChatAssistant() {
+  const navigate = useNavigate();
   const [messages] = useState([
     { id: 1, text: "नमस्ते! मैं आपकी बस ट्रैकिंग में मदद करूंगा। आप क्या जानना चाहते हैं?", lang: "हिंदी", time: "12:09 pm" },
     { id: 2, text: "Hello! I can help you with bus tracking. What would you like to know?", lang: "English", time: "12:09 pm" }
@@ -12,7 +14,8 @@ export default function ChatAssistant() {
       {/* Header */}
       <div className="flex items-center justify-between p-4 bg-slate-800 shadow-md rounded-b-2xl">
         <div className="flex items-center space-x-3">
-          <ChevronLeft className="w-6 h-6 text-gray-200 cursor-pointer hover:text-white transition-colors" />
+          <ChevronLeft className="w-6 h-6 text-gray-200 cursor-pointer hover:text-white transition-colors" 
+          onClick={() => navigate("/")}/>
           <div>
             <h2 className="font-semibold text-lg text-gray-100">AI Assistant</h2>
             <p className="text-sm text-gray-400">Multilingual support</p>
