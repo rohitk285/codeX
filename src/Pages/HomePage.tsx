@@ -51,7 +51,7 @@ const HomePage: React.FC = () => {
         {/* QR Code Section */}
         <div className="flex flex-col items-center space-y-3">
           <p className="text-gray-400 font-bold text-center text-md">
-            Changes dynamically and updates of ETA of upcoming buses every 30 seconds
+            Changes dynamically and updates the ETA of upcoming buses every 30 seconds
           </p>
           <img
             src={qrImage}
