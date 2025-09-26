@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Send, Mic, ChevronLeft } from "lucide-react";
 
 export default function ChatAssistant() {
-  const [messages, setMessages] = useState([
+  const [messages] = useState([
     { id: 1, text: "नमस्ते! मैं आपकी बस ट्रैकिंग में मदद करूंगा। आप क्या जानना चाहते हैं?", lang: "हिंदी", time: "12:09 pm" },
     { id: 2, text: "Hello! I can help you with bus tracking. What would you like to know?", lang: "English", time: "12:09 pm" }
   ]);
