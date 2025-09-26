@@ -117,7 +117,6 @@ const HomePage: React.FC = () => {
           </button>
 
           <button
-            onClick={() => navigate("/schedule")}
             className="bg-slate-800 rounded-xl p-4 flex flex-col items-center justify-center space-y-2 shadow hover:scale-105 transform transition-transform"
           >
             <svg
