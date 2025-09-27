@@ -51,12 +51,13 @@ const HomePage: React.FC = () => {
         {/* QR Code Section */}
         <div className="flex flex-col items-center space-y-3">
           <p className="text-gray-400 font-bold text-center text-md">
-            Changes dynamically and updates the ETA of upcoming buses every 30 seconds
+            Changes dynamically and updates the ETA of upcoming buses every 30
+            seconds
           </p>
           <img
             src={qrImage}
             alt="QR Code"
-            className="w-64 h-64 sm:w-72 sm:h-72 md:w-80 md:h-80 object-contain rounded-xl shadow-lg"
+            className="w-48 h-48 sm:w-56 sm:h-56 md:w-60 md:h-60 object-contain rounded-xl shadow-lg"
           />
           <p className="text-gray-400 text-center font-bold text-lg">
             Please scan here to get bus timings
@@ -116,9 +117,7 @@ const HomePage: React.FC = () => {
             </span>
           </button>
 
-          <button
-            className="bg-slate-800 rounded-xl p-4 flex flex-col items-center justify-center space-y-2 shadow hover:scale-105 transform transition-transform"
-          >
+          <button className="bg-slate-800 rounded-xl p-4 flex flex-col items-center justify-center space-y-2 shadow hover:scale-105 transform transition-transform">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-8 w-8 text-gray-300"
@@ -135,6 +134,23 @@ const HomePage: React.FC = () => {
             </svg>
             <span className="text-sm font-medium text-gray-200">Schedule</span>
           </button>
+        </div>
+
+        <div className="w-full h-72 rounded-xl bg-slate-800 flex flex-col items-center justify-center text-gray-400 font-semibold">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="w-10 h-10 text-blue-400 mb-2"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            strokeWidth={2}
+          >
+            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 110-5 2.5 2.5 0 010 5z" />
+          </svg>
+          <p className="text-lg text-center">Interactive Map</p>
+          <p className="text-sm text-gray-500 text-center mt-1">
+            Live bus tracking will appear here
+          </p>
         </div>
 
         {/* Live Bus Updates */}
